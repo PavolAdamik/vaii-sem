@@ -6,37 +6,41 @@ use App\Core\Model;
 
 class Vehicletype extends Model
 {
-    protected $id_type;
+    protected $id;
     protected $image_type;
     protected $name_type;
     protected $description_type;
 
-    /**
-     * @return int
-     */
-    public function getIdType(): int
-    {
-        return $this->id_type;
+    public function getCars() {
+        return Car::getAll('vehicletype_id = ?', [$this->getId()]);
     }
 
     /**
-     * @param int $id_type
+     * @return mixed
      */
-    public function setIdType(int $id_type): void
+    public function getId()
     {
-        $this->id_type = $id_type;
+        return $this->id;
     }
 
     /**
-     * @return string|null
+     * @param mixed $id
      */
-    public function getImageType(): ?string
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImageType()
     {
         return $this->image_type;
     }
 
     /**
-     * @param string|null $image_type
+     * @param mixed $image_type
      */
     public function setImageType(?string $image_type): void
     {
@@ -44,15 +48,15 @@ class Vehicletype extends Model
     }
 
     /**
-     * @return string|null
+     * @return mixed
      */
-    public function getNameType(): ?string
+    public function getNameType()
     {
         return $this->name_type;
     }
 
     /**
-     * @param string|null $name_type
+     * @param mixed $name_type
      */
     public function setNameType(?string $name_type): void
     {
@@ -60,15 +64,15 @@ class Vehicletype extends Model
     }
 
     /**
-     * @return string|null
+     * @return mixed
      */
-    public function getDescriptionType(): ?string
+    public function getDescriptionType()
     {
         return $this->description_type;
     }
 
     /**
-     * @param string|null $description_type
+     * @param mixed $description_type
      */
     public function setDescriptionType(?string $description_type): void
     {

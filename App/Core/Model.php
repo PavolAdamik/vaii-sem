@@ -123,7 +123,7 @@ abstract class Model implements \JsonSerializable
             foreach ($data as $key => &$item) {
                 $item = isset($this->$key) ? $this->$key : null;
             }
-            if ($data[static::getPkColumnName()] == null) {
+            if ($data[static::getPkColumnName()] == null) { // sem mi to nevojde
                 $arrColumns = array_map(fn($item) => (':' . $item), array_keys($data));
                 $columns = '`' . implode('`,`', array_keys($data)) . "`";
                 $params = implode(',', $arrColumns);

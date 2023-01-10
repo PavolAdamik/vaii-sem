@@ -33,7 +33,7 @@ class AuthController extends AControllerBase
         if (isset($formData['submit'])) {
             $logged = $this->app->getAuth()->login($formData['login'], $formData['password']);
             if ($logged) {
-                return $this->redirect('?c=admin');
+                return $this->redirect('?c=vehicletypes'); // ked som prihlaseny tak ma presmeruje na tie typy
             }
         }
 
@@ -48,6 +48,6 @@ class AuthController extends AControllerBase
     public function logout(): Response
     {
         $this->app->getAuth()->logout();
-        return $this->html();
+        return $this->redirect('?c=vehicletypes');
     }
 }

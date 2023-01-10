@@ -3,6 +3,7 @@
 namespace App\Config;
 
 use App\Auth\Authentic;
+use App\Auth\LoginAuthentificator;
 
 /**
  * Class Configuration
@@ -19,11 +20,13 @@ class Configuration
     public const DB_USER = 'auto_user'; // change to vaiicko_user, if docker you use docker
     public const DB_PASS = 'db_user_pass';
 
-    public const LOGIN_URL = '?c=auth&a=login';
+    public const LOGIN_URL = '?c=vehicletypes'; // defaultna url po prihlaseni sa
 
     public const ROOT_LAYOUT = 'root';
 
     public const DEBUG_QUERY = false;
 
-    public const AUTH_CLASS = Authentic::class;
+   // public const UPLOAD_DIR = "public/images/"; // ak nepojde, skusim uvodzovky
+
+    public const AUTH_CLASS = LoginAuthentificator::class;
 }
