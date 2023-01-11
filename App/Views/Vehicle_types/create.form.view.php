@@ -1,5 +1,5 @@
-<form method="post" action="?c=vehicletypes&a=store" enctype="multipart/form-data">
-    <?php /** @var \App\Models\Vehicletype $data */
+<form method="post" action="?c=vehicle_types&a=store" enctype="multipart/form-data">
+    <?php /** @var \App\Models\Vehicle_type $data */
     if ($data->getId()) { ?>
         <input type="hidden" name="id" value="<?php echo $data->getId() ?>">
     <?php } ?>

@@ -20,7 +20,7 @@ class Configuration
     public const DB_USER = 'auto_user'; // change to vaiicko_user, if docker you use docker
     public const DB_PASS = 'db_user_pass';
 
-    public const LOGIN_URL = '?c=vehicletypes'; // defaultna url po prihlaseni sa
+    public const LOGIN_URL = '?c=vehicle_types'; // defaultna url po prihlaseni sa
 
     public const ROOT_LAYOUT = 'root';
 

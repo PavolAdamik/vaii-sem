@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Core\AControllerBase;
 use App\Core\Responses\Response;
+use App\Models\Question;
 
 /**
  * Class HomeController
@@ -39,4 +40,9 @@ class HomeController extends AControllerBase
     {
         return $this->html();
     }
+
+//    public function questions(): Response {
+//        $questions = Questions::getAll();
+//        return $this->html($questions);
+//    }
 }

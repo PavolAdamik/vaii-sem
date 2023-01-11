@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Core\Model;
 
-class Vehicletype extends Model
+class Vehicle_type extends Model
 {
     protected $id;
     protected $image_type;

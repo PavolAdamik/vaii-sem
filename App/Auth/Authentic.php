@@ -58,7 +58,7 @@ class Authentic implements IAuthenticator
     function getLoggedUserName(): string
     {
 
-        return isset($_SESSION['user']) ? $_SESSION['user'] : throw new \Exception("User not logged in");
+        return isset($_SESSION['user']) ? $_SESSION['user'] : throw new \Exception("Users not logged in");
     }
 
     /**

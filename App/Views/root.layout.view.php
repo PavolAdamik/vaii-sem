@@ -24,13 +24,13 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="?c=vehicletypes">
+        <a class="navbar-brand" href="?c=vehicle_types">
             <img src="public/images/PP_logo.jpg" title="<?= \App\Config\Configuration::APP_NAME ?>"
                  title="<?= \App\Config\Configuration::APP_NAME ?>">
         </a>
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link" href="?c=vehicletypes">Domov</a>
+                <a class="nav-link" href="?c=vehicle_types">Domov</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?c=home&a=contact">Kontakt</a>
@@ -40,7 +40,7 @@
                     Výber auta
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="cars.php">Osobné auto</a></li>
+                    <li><a class="dropdown-item" href="?c=cars">Osobné auto</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item disabled" href="#">Dodávka</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -50,7 +50,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="otazky.php">Otázky k prenájmu</a>
+                <a class="nav-link" aria-current="page" href="?c=questions">Otázky k prenájmu</a>
             </li>
             <?php if ($auth->isLogged()) { ?>
                 <li class="nav-item">

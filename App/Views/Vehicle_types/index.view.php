@@ -2,8 +2,8 @@
 
 <?php
 
-use App\Models\Vehicletype;
-/** @var Vehicletype[] $data */
+use App\Models\Vehicle_type;
+/** @var Vehicle_type[] $data */
 /** @var \App\Core\IAuthenticator $auth */
 
 ?>
@@ -21,37 +21,32 @@ use App\Models\Vehicletype;
         </p>
         <?php if ($auth->isLogged()) { ?>
             <div>
-                <a href="?c=vehicletypes&a=create" class="btn btn-success" >Vytvor typ</a>
+                <a href="?c=vehicle_types&a=create" class="btn btn-success" >Vytvor typ</a>
             </div>
         <?php } ?>
     </div>
 
     <div class="kontainer">
-
         <h3 class="nadpisH1">Naša ponuka:</h3>
-
-
-
         <!--<div class="d-flex justify-content-lg-start flex-wrap margin">-->
         <div class="row row-cols-1 row-cols-md-4 g-3">
-
             <?php
-            foreach ($data as $vehicletype) {
+            foreach ($data as $vehicle_type) {
                 ?>
                 <!--    <div class="card mt-3" style="width: 18rem;">-->
                 <div class="col">
                     <div class="card border-dark" style="height: auto">
-                        <?php if ($vehicletype->getImageType()) { ?>
+                        <?php if ($vehicle_type->getImageType()) { ?>
                             <a href="?c=cars">
-                                <img src="public/images/<?php echo  $vehicletype->getImageType() ?>" class="card-img-top" height="240" alt="cannot load an image">
+                                <img src="public/images/<?php echo  $vehicle_type->getImageType() ?>" class="card-img-top" height="240" alt="cannot load an image">
                             </a>
                         <?php } ?>
                         <div class="card-body text-end">
-                            <h5 class="card-title"><?= $vehicletype->getNameType() ?></h5>
-                            <p class="margin"><?= $vehicletype->getDescriptionType() ?></p>
+                            <h5 class="card-title"><?= $vehicle_type->getNameType() ?></h5>
+                            <p class="margin"><?= $vehicle_type->getDescriptionType() ?></p>
                             <?php if ($auth->isLogged()) { ?>
-                                <a href="?c=vehicletypes&a=delete&id=<?php echo $vehicletype->getId() ?>" class="btn btn-danger">Zmazat</a>
-                                <a href="?c=vehicletypes&a=edit&id=<?php echo $vehicletype->getId() ?>" class="btn btn-warning">Upravit</a>
+                                <a href="?c=vehicle_types&a=delete&id=<?php echo $vehicle_type->getId() ?>" class="btn btn-danger">Zmazat</a>
+                                <a href="?c=vehicle_types&a=edit&id=<?php echo $vehicle_type->getId() ?>" class="btn btn-warning">Upravit</a>
                             <?php } ?>
                         </div>
                     </div>
