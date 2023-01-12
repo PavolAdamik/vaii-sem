@@ -54,4 +54,5 @@ class QuestionsController extends AControllerBase
         }
         return $this->redirect("?c=questions");
     }
+    //.
 }
