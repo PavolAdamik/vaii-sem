@@ -10,10 +10,9 @@
 
 <div>
     <h1 class="nadpisH1">Najčastejčie otázky k prenájmu:</h1>
-    <img src="public/images/titulka.jpg" alt="titulna fotka" class="responsive">
+    <img src="/public/images/titulka.jpg" alt="titulna fotka" class="responsive">
 </div>
 
-<!--    todo zamysliet sa ci mozu vsetci pridavat.. aj neprihlaseni -->
 <?php //if ($auth->isLogged()) { ?>
     <div>
         <a href="?c=questions&a=create" class="btn btn-success" >Vytvor otázku</a>
@@ -31,7 +30,6 @@
                    </a>
                     <div id="<?php echo $question->getId() ?>" style="display: none;">
                         <p><?php echo $question->getReply() ?></p>
-                        <!--    todo mozno posunut na koniec otazky alebo umoznit aj prihlasenym pridavat otazky-->
                         <?php if ($auth->isLogged()) { ?>
                             <a href="?c=questions&a=delete&id=<?php echo $question->getId() ?>" class="btn btn-danger">Zmazat</a>
                             <a href="?c=questions&a=edit&id=<?php echo $question->getId() ?>" class="btn btn-warning">Upravit</a>

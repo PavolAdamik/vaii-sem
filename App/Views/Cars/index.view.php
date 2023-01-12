@@ -6,7 +6,7 @@ use App\Models\Car;
 
 ?>
 <div>
-    <img src="public/images/titulka.jpg" alt="titulna fotka" class="responsive">
+    <img src="/public/images/titulka.jpg" alt="titulna fotka" class="responsive">
 </div>
 
 <div class="kontainer">

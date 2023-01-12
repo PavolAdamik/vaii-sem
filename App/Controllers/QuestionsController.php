@@ -40,8 +40,10 @@ class QuestionsController extends AControllerBase
 
     public function edit() {
         $id = $this->request()->getValue('id');
-        $question = ($id ? Question::getOne($id) : new Question());
-        return $this->html($question ,viewName: 'create.form'); //znova vytvaram
+        $questionToEdit =  Question::getOne($id);
+        if ($questionToEdit) {
+            return $this->html($questionToEdit ,viewName: 'create.form'); //znova vytvaram
+        }
     }
 
     public function delete() {

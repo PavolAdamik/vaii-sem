@@ -12,7 +12,7 @@ class Question extends Model
     protected $reply; // toto by mohol odpovedat len admin
 
     /**
-     * @return int
+     * @return mixed
      */
     public function getId()
     {
@@ -44,7 +44,7 @@ class Question extends Model
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getReply()
     {

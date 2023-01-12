@@ -1,11 +1,12 @@
-<form method="post" action="?c=cars&a=store" enctype="multipart/form-data">
-    <?php /** @var \App\Models\Car $data */
-    if ($data->getId()) { ?>
+    <?php /** @var \App\Models\Car $data */ ?>
+
+<form method="post" action="?c=cars&a=store&id=<?php echo $data->getId() ?>" enctype="multipart/form-data">
+    <?php if ($data->getId()) { ?>
         <input type="hidden" name="id" value="<?php echo $data->getId() ?>">
     <?php } ?>
     <div class="col my-2 ">
 <!--        <input type="text" name="id" class="margin" placeholder="Zadaj ŠPZ" value="--><?php //echo $data->getId() ?><!--" ><br>-->
-        <input type="text" name="vehicletypes_id" class="margin" placeholder="Zadaj id kategorie" value="<?php echo $data->getVehicletypesId() ?>"><br>
+        <input type="text" name="vehicle_types_id" class="margin" placeholder="Zadaj id kategorie" value="<?php echo $data->getVehicle_typesId() ?>"><br>
         <input type="file" name="image" class="margin" value="<?php echo $data->getImage() ?>"><br>
         <input type="text" name="name" class="margin" placeholder="Zadaj nazov" value="<?=$data->getName() ?>" ><br>
 
