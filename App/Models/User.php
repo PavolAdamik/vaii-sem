@@ -36,7 +36,7 @@ class User extends Model
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getFirstname()
     {

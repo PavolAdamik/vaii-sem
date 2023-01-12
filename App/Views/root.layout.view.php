@@ -22,6 +22,8 @@
 
     <script src="/public/js/script.js"></script>
     <script src="/public/js/javaScript.js"></script>
+    <script src="/public/js/users.js"></script>
+
 
 </head>
 <body>

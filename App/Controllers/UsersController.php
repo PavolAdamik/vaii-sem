@@ -14,4 +14,8 @@ class UsersController extends AControllerBase
         $users = User::getAll();
         return $this->html($users);
     }
+
+//    public function delete() {
+//
+//    }
 }

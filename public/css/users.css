@@ -1,0 +1,9 @@
+th {
+    cursor: pointer;
+}
+
+.tb:hover {
+    /*font-size: 1.2em;*/
+    color: #2f4d46;
+    background-color: #ae8de3;
+}

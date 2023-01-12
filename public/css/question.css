@@ -9,3 +9,12 @@
 .question_link {
     text-decoration: none;
 }
+
+#new_question{
+    width: 30%;
+}
+
+#new_reply{
+    width: 30%;
+    height: 6em;
+}

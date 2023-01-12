@@ -20,12 +20,6 @@ function checkUpdateVehicleType(form) {
     }
 }
 
-function toggle(obj) {
-    obj=document.getElementById(obj);
-    if (obj.style.display === "block") obj.style.display = "none";
-    else obj.style.display = "block";
-}
-
 function reg_kontrola(form){
     if(form.firstname.value === ""){
         alert("Musíte zadať vaše meno.");

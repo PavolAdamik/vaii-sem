@@ -5,14 +5,18 @@
 
 //jak to vyselektujem ?
 function get_into($sql, $id_car) {
-    $table = $sql->prepare("SELECT * FROM cars WHERE id = :id_car");
+    $table = $sql->prepare("SELECT c.name, u.firstname, u.lastname, cr.dat_rent, cr.dat_return 
+                                FROM cars AS c 
+                                INNER JOIN car_rents AS cr
+                                    ON c.id = cr.id_car
+                                INNER JOIN users AS u
+                                ON u.id = cr.id_user;");
     $table->execute([':id_car' => $id_car]);
     if ($row = $table->fetch()) {
         return $row;
     }
     return false;
 }
-
 
 ?>
 

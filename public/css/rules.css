@@ -10,6 +10,10 @@ nav {
     /*display: flex;*/
 }
 
+th {
+    cursor: pointer;
+}
+
 
 .responsive {
     width: 100%;
