@@ -5,7 +5,7 @@
     <?php } ?>
     <div class="col my-2 ">
 <!--        <input type="text" name="id" class="margin" placeholder="Zadaj ŠPZ" value="--><?php //echo $data->getId() ?><!--" ><br>-->
-        <input type="text" name="vehicletypes_id" class="margin" placeholder="Zadaj id kategorie" value="<?php echo $data->getVehicletypesId() ?>"><br>
+        <input type="text" name="vehicle_types_id" class="margin" placeholder="Zadaj id kategorie" value="<?php echo $data->getVehicle_typesId() ?>"><br>
         <input type="file" name="image" class="margin" value="<?php echo $data->getImage() ?>"><br>
         <input type="text" name="name" class="margin" placeholder="Zadaj nazov" value="<?=$data->getName() ?>" ><br>
 

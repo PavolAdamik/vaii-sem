@@ -44,7 +44,7 @@ class Question extends Model
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getReply()
     {
