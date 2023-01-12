@@ -16,6 +16,10 @@ nav {
     height: auto;
 }
 
+a.question:hover, a.question:active {
+    font-size: 150%;
+}
+
 .farba {
     color: black;
 }

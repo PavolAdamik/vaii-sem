@@ -1,0 +1,11 @@
+.question_title:hover {
+    font-size: 2em;
+}
+
+.question_title {
+    color: black;
+}
+
+.question_link {
+    text-decoration: none;
+}

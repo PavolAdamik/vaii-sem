@@ -22,7 +22,6 @@
 
 <div class="kontainer">
 
-<!--    todo hodit do javascript filu-->
         <script>
             function toggle(obj) {
                 obj=document.getElementById(obj);
@@ -34,8 +33,8 @@
         <?php
         foreach ($data as $question) { ?>
                 <div class="col">
-                    <a href="javascript: void(0);" style="text-decoration: none" onclick="toggle('<?php echo $question->getId() ?>')">
-                        <h3 class="farba not-underline ital"><?php echo $question->getQuestion() ?></h3>
+                    <a class="question_link" href="javascript: void(0);"   onclick="toggle('<?php echo $question->getId() ?>')">
+                        <h3 class="question_title"><?php echo $question->getQuestion() ?></h3>
                    </a>
                     <div id="<?php echo $question->getId() ?>" style="display: none;">
                         <p><?php echo $question->getReply() ?></p>

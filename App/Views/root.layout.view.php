@@ -16,10 +16,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/css/styl.css">
-    <link rel="stylesheet" href="public/css/rules.css">
+    <link rel="stylesheet" href="/public/css/styl.css">
+    <link rel="stylesheet" href="/public/css/rules.css">
+    <link rel="stylesheet" href="/public/css/question.css">
 
-    <script src="public/js/script.js"></script>
+    <script src="/public/js/script.js"></script>
+    <script src="/public/js/javaScript.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">

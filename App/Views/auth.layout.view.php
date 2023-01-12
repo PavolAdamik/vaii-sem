@@ -18,7 +18,11 @@
             integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/css/styl.css">
+    <link rel="stylesheet" href="/public/css/rules.css">
+    <link rel="stylesheet" href="/public/css/question.css">
+
     <script src="/public/js/script.js"></script>
+    <script src="/public/js/javaScript.js"></script>
 </head>
 <body>
 <div class="container-fluid mt-3">
