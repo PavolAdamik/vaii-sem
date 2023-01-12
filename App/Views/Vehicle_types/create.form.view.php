@@ -5,9 +5,13 @@
     <?php } ?>
     <div class="col my-2 ">
         <input type="file" name="image_type" class="margin" value="<?php echo $data->getImageType() ?>"><br>
-        <input type="text" name="name_type" class="margin" placeholder="Zadaj nazov" value="<?php echo $data->getNameType() ?>">
+        <label>
+            <input type="text" name="name_type" class="margin" placeholder="Zadaj nazov" value="<?php echo $data->getNameType() ?>">
+        </label>
         <br>
-        <textarea name="description_type" rows="4" cols="50" placeholder="Zadaj popis"><?php echo $data->getDescriptionType() ?></textarea>
+        <label>
+            <textarea name="description_type" rows="4" cols="50" placeholder="Zadaj popis"><?php echo $data->getDescriptionType() ?></textarea>
+        </label>
         <input type="submit" value="Odošli súbor" class="margin">
     </div>
 </form>

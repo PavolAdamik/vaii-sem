@@ -43,7 +43,7 @@
                 echo "\t\t<td>".$user->getLastname()."</td>\n";
                 echo "\t\t<td>".$user->getDrivingLicence()."</td>\n";
                 echo "\t\t<td>".$user->getEmail()."</td>\n";
-
+//                echo "\t\t<td class='tlacidla kurzor' onclick='deleteUser(user)'>\n";
 
 //                    print "\t\t<td class='tlacidla kurzor' onclick='$user->delete()' ;
 //                            \"><img src='public/images/delete.png' class='tlacidla' alt='vymazat riadok'></td>\n";
@@ -57,5 +57,5 @@
     </table>
 </div>
 <div class="col">
-    <p>*ak chceš utriediť tabuľku podľa stĺpca, klikni na jeho hlavičku</p>
+    <p>*ak chceš utriediť tabuľku podľa nejakého stĺpca, klikni na jeho hlavičku</p>
 </div>

@@ -30,8 +30,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="?c=vehicle_types">
-            <img src="public/images/PP_logo.jpg" title="<?= \App\Config\Configuration::APP_NAME ?>"
-                 title="<?= \App\Config\Configuration::APP_NAME ?>">
+            <img src="/public/images/PP_logo.jpg" title="<?= \App\Config\Configuration::APP_NAME ?>" alt="cannot load an image">
         </a>
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
@@ -76,7 +75,7 @@
         <?php } else { ?>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-<!--                    <a class="nav-link" href="--><?//= \App\Config\Configuration::LOGIN_URL ?><!--">Prihlásenie</a>-->
+
                     <a class="nav-link" href="?c=auth&a=login">Prihlásenie</a>
                 </li>
             </ul>

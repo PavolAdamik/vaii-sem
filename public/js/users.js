@@ -1,3 +1,6 @@
+function deleteUser(user) {
+
+}
 
 function sortTable(n) {
     var tabulka, riadky, vymena, pozicia, aktualnyRiadok, nasledujuciRiadok, nastalaVymena, smer;
