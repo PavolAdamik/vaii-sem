@@ -6,6 +6,7 @@ use App\Core\Model;
 
 class Question extends Model
 {
+    //todo: ked sa zamyslim, staci mi 2 veci v tabulke + idecko ?
     protected $id;
     protected $question; // zakaznik polozi otazku
     protected $reply; // toto by mohol odpovedat len admin

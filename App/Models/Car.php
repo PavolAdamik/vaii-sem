@@ -19,6 +19,9 @@ class Car extends Model
     protected $year;
     protected $type;
 
+
+
+
     /**
      * @return mixed
      */

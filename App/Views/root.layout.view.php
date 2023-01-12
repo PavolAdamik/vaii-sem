@@ -54,7 +54,10 @@
             </li>
             <?php if ($auth->isLogged()) { ?>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="pouzivatelia.php">Používatelia</a>
+                    <a class="nav-link" aria-current="page" href="?c=users">Používatelia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="?c=car_rents">Tabuľka prenájmov</a>
                 </li>
             <?php } ?>
         </ul>
